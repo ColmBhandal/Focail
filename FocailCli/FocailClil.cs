@@ -11,6 +11,7 @@ namespace FocailCli
         static void Main(string[] args)
         {
             Console.WriteLine("TODO: Write the app!");
+            Console.ReadLine();
         }
     }
 }

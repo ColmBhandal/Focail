@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FocailLib
 {
-    public class GameRunner
+    internal class RoundProducerImpl
     {
     }
 }
