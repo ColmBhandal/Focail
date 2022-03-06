@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FocailLib
 {
-    internal class RoundProducerImpl
+    internal class RoundProducerImpl : IRoundProducer
     {
     }
 }

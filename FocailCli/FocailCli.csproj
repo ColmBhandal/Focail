@@ -7,8 +7,8 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <OutputPath>bin\$(Configuration)\$(TargetFrameworkVersion)</OutputPath>
     <DocumentationFile>bin\$(Configuration)\$(TargetFrameworkVersion)\$(AssemblyName).xml</DocumentationFile>
-	<Version>0.0.0.0</Version>
-	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Version>0.0.0.0</Version>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -38,7 +38,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>FocailCli.FocailClil</StartupObject>
+    <StartupObject>FocailCli.FocaillCli</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -51,11 +51,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FocailClil.cs" />
+    <Compile Include="FocaillCli.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FocailLib\FocailLib.csproj">
+      <Project>{64E7799B-2DC4-4F28-8B00-517A0C3E1C20}</Project>
+      <Name>FocailLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
